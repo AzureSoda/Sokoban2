@@ -1,7 +1,11 @@
-######
-stagen=input()
-for i in range(3):
-    alist=input
+arr=[]
+while True:
+    arr = [list(map(str, input().split())) for i in range(4)]
 
-for i in range(3):
-    print(alist)
+    if arr==3:
+        break
+
+for i in arr:        
+    for j in i:   
+        print(j, end='')
+    print()
