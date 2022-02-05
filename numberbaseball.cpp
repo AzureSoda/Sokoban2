@@ -26,18 +26,20 @@ int main() {
 				comnum = rand() % 1000;
 			}
 
-			com1 = comnum % 100;
-			com2 = comnum % 10;
-			com3 = comnum % 1;
+			com1 = comnum / 100; // 100의 자리수
+			com2 = comnum %100/10 ;  // 10의 자리수
+			com3 = comnum % 10;  // 1의 자리수
 
-			printf("%d\n", comnum);    //// 임시용 
+			printf("%d\n", comnum);    //// 임시용 숫자확인
 
 			cout << "예상숫자 입력하기";
 			cin >> mynum;
 
-			my1 = mynum % 100;
-			my2 = mynum % 10;
-			my3 = mynum % 1;
+			my1 = mynum / 100;
+			my2 = mynum % 100/10;
+			my3 = mynum % 10;
+
+			printf("% d, %d , %d", my1, my2, my3);
 
 			if (com1 == my1);
 			strike += 1;
@@ -71,3 +73,12 @@ int main() {
 
 	} while (option!=0);
 }
+
+
+
+
+/*
+if 
+com1==my1
+strike=+1
+*/
